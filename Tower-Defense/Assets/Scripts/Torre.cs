@@ -6,18 +6,19 @@ public class Torre : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject prefabDoMissil;
+    public GameObject prefabDaTorre;
 
     void Start()
     {
 
-        Instantiate (prefabDoMissil);
         
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetMouseButtonDown(0)) Instantiate (prefabDaTorre);
         
     }
 }
